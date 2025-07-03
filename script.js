@@ -1,7 +1,15 @@
-// Exemplo simples de interatividade com JavaScript
+// Script básico para navegação
 document.addEventListener('DOMContentLoaded', () => {
-  const videoSection = document.querySelector('#video-aulas');
-  videoSection.addEventListener('click', () => {
-    alert('Você clicou na seção de Vídeos Aulas!');
+  const links = document.querySelectorAll('nav ul li a');
+  
+  links.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetSection = document.querySelector(link.getAttribute('href'));
+      window.scrollTo({
+        top: targetSection.offsetTop,
+        behavior: 'smooth'
+      });
+    });
   });
 });
