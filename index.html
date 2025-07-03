@@ -13,22 +13,86 @@
       <ul>
         <li><a href="#video-aulas">Vídeos Aulas</a></li>
         <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#configuracoes">Configurações</a></li>
       </ul>
     </nav>
   </header>
   
+  <!-- Vídeos Aulas -->
   <section id="video-aulas">
     <h2>Vídeos Aulas</h2>
-    <p>Acesse vídeos educativos para o seu aprendizado.</p>
+    <ul>
+      <li>
+        <h3>Como tirar o troco</h3>
+        <p>Duração: 5 minutos</p>
+        <a href="#">Assistir</a>
+      </li>
+      <li>
+        <h3>Como ler a bula do remédio</h3>
+        <p>Duração: 10 minutos</p>
+        <a href="#">Assistir</a>
+      </li>
+      <li>
+        <h3>Planejando o futuro</h3>
+        <p>Duração: 5 minutos</p>
+        <a href="#">Assistir</a>
+      </li>
+    </ul>
   </section>
-  
+
+  <!-- Perfil do Aluno -->
   <section id="perfil">
     <h2>Perfil do Aluno</h2>
-    <p>Seu perfil será exibido aqui, com suas conquistas e informações.</p>
+    <div id="perfil-info">
+      <img src="perfil.jpg" alt="Foto do aluno" id="foto-aluno">
+      <h3>Nome do Aluno</h3>
+      <div id="conquistas">
+        <h4>Conquistas</h4>
+        <div class="conquista">
+          <img src="conquista1.jpg" alt="Conquista 1" class="foto-conquista">
+        </div>
+        <div class="conquista">
+          <img src="conquista2.jpg" alt="Conquista 2" class="foto-conquista">
+        </div>
+      </div>
+      <div id="perguntas">
+        <h4>Perguntas</h4>
+        <div class="pergunta">
+          <p>Quais desafios você superou até aqui?</p>
+          <audio controls>
+            <source src="audio/desafios.mp3" type="audio/mp3">
+            Seu navegador não suporta o áudio.
+          </audio>
+        </div>
+        <div class="pergunta">
+          <p>Quem ou o que te inspira a continuar?</p>
+          <audio controls>
+            <source src="audio/inspiracao.mp3" type="audio/mp3">
+            Seu navegador não suporta o áudio.
+          </audio>
+        </div>
+        <div class="pergunta">
+          <p>Se você pudesse voltar no tempo e dar um conselho para o 'você' de anos atrás, o que diria para incentivar o seu aprendizado e a sua jornada?</p>
+          <audio controls>
+            <source src="audio/conselho.mp3" type="audio/mp3">
+            Seu navegador não suporta o áudio.
+          </audio>
+        </div>
+      </div>
+    </div>
   </section>
-  
+
+  <!-- Configurações -->
+  <section id="configuracoes">
+    <h2>Configurações</h2>
+    <p>Alterar configurações de conta e preferências.</p>
+  </section>
+
   <footer>
     <p>&copy; 2023 ConectaEJA. Todos os direitos reservados.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
+
+
